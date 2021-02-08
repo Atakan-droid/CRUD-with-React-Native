@@ -1,15 +1,16 @@
 import * as firebase from 'firebase'
 var firebaseConfig = {
-    apiKey: "AIzaSyDX50avaWHErY7uMzii08LgcFylV7XkTf0",
-    authDomain: "trainingprojects-74d80.firebaseapp.com",
-    databaseURL: "https://trainingprojects-74d80-default-rtdb.firebaseio.com",
-    projectId: "trainingprojects-74d80",
-    storageBucket: "trainingprojects-74d80.appspot.com",
-    messagingSenderId: "714470365167",
-    appId: "1:714470365167:web:341ff7a1c6d78bbe74481a",
-    measurementId: "G-DYXDRXH9YP"
+    apiKey: "AIzaSyAWNJzQA7Ffj5H61bD3ZHJorvswzgyv5xE",
+    authDomain: "mycrud-project.firebaseapp.com",
+    databaseURL: "https://mycrud-project-default-rtdb.firebaseio.com",
+    projectId: "mycrud-project",
+    storageBucket: "mycrud-project.appspot.com",
+    messagingSenderId: "318229758127",
+    appId: "1:318229758127:web:5bf6ccdbc44940bef5d45a"
 };
-  
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+ }
+
 
 export default firebase

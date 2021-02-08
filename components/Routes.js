@@ -9,10 +9,16 @@ import { createAppContainer } from 'react-navigation';
 const NavStack = createStackNavigator({
 
     Blog: {
-        screen:Blog
+        screen: Blog,
+        navigationOptions: () => ({
+            headerTitle:"Blog Section"
+        })   
     },
     Edit: {
-        screen:Edit
+        screen: Edit,
+        navigationOptions: () => ({
+            headerTitle:"Edit Your Share"
+        })
     },
 
 })
